@@ -19,6 +19,11 @@ gem 'devise'
 # 日本語化
 gem 'rails-i18n'
 
+# ページネーション
+gem 'kaminari'
+
+# kaminariにbootstrapを適用
+gem 'kaminari-bootstrap'
 
 gem 'bootstrap', '~> 4.4.1'
 gem 'jquery-rails'
