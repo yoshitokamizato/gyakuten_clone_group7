@@ -98,3 +98,33 @@
 
 
 }
+
+#container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0 160px 0;
+}
+
+#movie {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.class {
+  max-width: 720px;
+}
+
+.movie-title {
+  font-size: 40px;
+}
+
+#movie .movie-contents {
+  padding-bottom: 70px;
+}
+
+#movie .pagenate-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+}

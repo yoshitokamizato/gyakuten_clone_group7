@@ -1,0 +1,23 @@
+<div id="container">
+  <section id="movie">
+    <div class="container">
+      <div class="rows">
+        <div class="text-center">
+          <div class="col-xs-12">
+          <% @movies.each do |movie| %>
+            <div class="movie-title">
+              <%= movie.title%>
+            </div>
+            <div class="movie-contents">
+              <iframe width="560" height="315" src="<%= movie.url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          <% end %>
+          <div class="pagenate-container">
+            <%= paginate @movies %>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
