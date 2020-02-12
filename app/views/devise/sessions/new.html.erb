@@ -4,8 +4,13 @@
 
     <div class="alert alert-error alert-danger">
         <button type="button" class="close" data-dismiss="alert">x</button>
-        アカウント登録もしくはログインしてください。
-        <span class="flash-notice"><%= flash[:notice] %></span>
+
+        <% if alert %>
+          メールアドレスもしくはパスワードが不正です。
+        <% else %>
+          アカウント登録もしくはログインしてください。
+        <% end %>
+
     </div>
 
     <h1>ログイン</h1>
