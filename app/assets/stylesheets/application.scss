@@ -38,7 +38,56 @@
     font-size: 20px;
 }
 
+
 @media screen and (min-width: 0px) {
+
+  #container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0 160px 0;
+  }
+
+  #container h1 {
+    padding: 40px 0px 10px 0px;
+    font-size: 3em;
+  }
+
+  #container .form-control {
+    height: 100px;
+    font-size: 50px;
+  }
+
+  #container p {
+    font-size: 2.2em;
+    line-height: 1.9em;
+  }
+
+  #questions .questions-container {
+    padding: 30px 0;
+  }
+
+  #questions a {
+    text-decoration: none;
+    display: block;
+    color: #333333;
+    border: solid 2px #505050;
+    border-radius: 10px;
+    transition: .4s;
+  }
+
+  #questions .question {
+    padding: 10px;
+  }
+
+  #questions a .title {
+    font-size: 35px;
+    line-height: 2;
+  }
+
+  #questions a .info {
+    padding: 10px 10px 10px 20px;
+    color: #BBBBBB;
+  }
 
   .footer {
       position: fixed;
@@ -99,10 +148,50 @@
 
 }
 
-#container {
-  width: 90%;
-  margin: 0 auto;
-  padding: 50px 0 160px 0;
+@media screen and (min-width: 1000px){
+  #container {
+    width: 100%;
+    padding: 50px 0 80px 0;
+    max-width: 710px;
+    margin: 0 auto;
+  }
+
+  #container h1 {
+    padding: 20px 0px 10px 0px;
+    font-size: 30px;
+  }
+
+  #container p {
+    font-size: 17px;
+  }
+
+  #questions .questions-container {
+    padding: 30px 0;
+  }
+
+  #questions a {
+    text-decoration: none;
+    display: block;
+    color: #333333;
+    border: solid 2px #505050;
+    border-radius: 10px;
+    transition: .4s;
+  }
+
+  #questions .question {
+    padding: 10px;
+  }
+
+  #questions a .title {
+    font-size: 22px;
+    line-height: 2;
+  }
+
+  #questions a .info {
+    padding: 10px 10px 10px 20px;
+    color: #BBBBBB;
+  }
+
 }
 
 #movie {
@@ -127,4 +216,8 @@
   justify-content: center;
   align-items: center;
   font-size: 36px;
+}
+
+#container .initial-height {
+  height: initial;
 }
