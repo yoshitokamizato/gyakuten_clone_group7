@@ -16,3 +16,9 @@ CSV.foreach('db/csv/movies_list.csv', headers: true) do |row|
     url: row['url']
   )
 end
+
+
+# 質問初期データ
+
+Question.create!(title: "質問1", content: "ここに質問の詳細が表示される。")
+Question.create!(title: "質問2", content: "ここに質問の詳細が表示される。")

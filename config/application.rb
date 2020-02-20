@@ -25,6 +25,9 @@ module GyakutenCloneGroup7
     # 管理者画面の日本語化
     config.i18n.default_locale = :ja
 
+    # タイムゾーンの変更
+    config.time_zone = "Tokyo"
+
     # Don't generate system test files.
     config.generators.system_tests = nil
   end
