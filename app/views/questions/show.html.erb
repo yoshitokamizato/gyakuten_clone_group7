@@ -1,0 +1,49 @@
+<div id="container">
+
+  <section id="question">
+    <div class="title">
+      <h3>【質問】</h3>
+      <p>
+        <%= markdown(@question.title).html_safe %>
+        </p>
+    </div>
+    <hr>
+    <div class="detail">
+      <h3>【詳細】</h3>
+      <p>
+        <%= markdown(@question.content).html_safe %>
+        </p>
+    </div>
+    <hr>
+
+    <% if @question.solutions.length >= 2 %>
+        <% @question.solutions.each.with_index(1) do |solution, idx| %>
+          <div class="solution">
+            <h3>【回答<%= idx %>】</h3>
+            <p>
+              <%= markdown(solution.content).html_safe %>
+              </p>
+          </div>
+        <% end %>
+      <% elsif @question.solutions[0] %>
+        <div class="solution">
+          <h3>【回答】</h3>
+          <p>
+            <%= markdown(@question.solutions[0].content).html_safe %>
+            </p>
+        </div>
+    <% end %>
+  </section>
+
+  <%= form_for @solution, url: "/solutions/#{@question.id}", method: :post do |f| %>
+    <div class="container">
+      <h1>回答投稿</h1>
+      <p>【回答】</p>
+      <p><%= f.text_area :content, class: "form-control initial-height", rows: 5 %></p>
+      <div class="form-group">
+        <%= f.submit('送信',class: 'btn btn-primary btn-block btn-lg') %>
+      </div>
+    </div>
+  <% end %>
+
+</div>
