@@ -6,7 +6,7 @@ class QuestionsController < ApplicationController
   end
 
   def create
-    @question = Question.new(title: question_params[:title], content: question_params[:content], views: 0)
+    @question = Question.new(question_params)
     @question.save
     flash[:success] = "質問を追加しました。"
     redirect_to action: :index

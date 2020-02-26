@@ -31,7 +31,8 @@
                 <div class="col-md-5">
                   <div class="info text-right">
                     <p>質問日　<%= l question.updated_at, format: :default %></p>
-                    <p><%= question.views %>&nbsp;views</p>
+                    <!--<p><%= question.views %>&nbsp;<%= question.views>=2 ? "views" : "view" %></p>-->
+                    <p><%= pluralize(question.views, "view", locale: :en) %></p>
                   </div>
                 </div>
               </div>

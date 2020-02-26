@@ -15,7 +15,7 @@
   <body>
     <%= render 'shared/header' %>
 
-    <%= render 'shared/success_flash' %>
+    <%= render 'shared/flash' unless devise_controller?%>
 
     <%= yield %>
   </body>
