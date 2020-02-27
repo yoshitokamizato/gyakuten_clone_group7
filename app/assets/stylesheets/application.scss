@@ -39,6 +39,50 @@
 }
 
 
+/***
+markdown code 表示装飾　ここから
+***/
+code {
+  font: 12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  color: #52595d;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+
+  border: 1px solid #ccc;
+  background-color: #f9f099;
+  padding: 0px 3px;
+  display: inline-block;
+  margin: 2px;
+}
+
+pre {
+  border: 1px solid #cacaca;
+  line-height: 1.2em;
+  font: 12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  padding: 10px;
+  overflow:auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #FAFAFB;
+  color: #393939;
+  margin: 2px;
+}
+/***
+markdown code 表示装飾　ここまで
+***/
+
+
+
 @media screen and (min-width: 0px) {
 
   #container {
@@ -54,7 +98,7 @@
 
   #container .form-control {
     height: 100px;
-    font-size: 50px;
+    font-size: 25px;
   }
 
   #container p {
@@ -71,6 +115,15 @@
     display: block;
     color: #333333;
     border: solid 2px #505050;
+    border-radius: 10px;
+    transition: .4s;
+  }
+
+  #questions a:hover {
+    text-decoration: none;
+    display: block;
+    color: #333333;
+    border: solid 2px red;
     border-radius: 10px;
     transition: .4s;
   }
@@ -190,6 +243,10 @@
   #questions a .info {
     padding: 10px 10px 10px 20px;
     color: #BBBBBB;
+  }
+
+  #question h3 {
+      font-size: 20px;
   }
 
 }

@@ -14,11 +14,8 @@
 
   <body>
     <%= render 'shared/header' %>
-    <% flash.each do |message_type, message| %>
-      <div class="alert alert-success">
-        <%= message %>
-      </div>
-    <% end %>
+
+    <%= render 'shared/flash' unless devise_controller?%>
 
     <%= yield %>
   </body>
