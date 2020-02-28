@@ -6,4 +6,5 @@ ja:
     models:
       comment: 'コメント'
       admin_user: '管理者'
+      text: 'テキスト教材'
       movie: '動画教材'
