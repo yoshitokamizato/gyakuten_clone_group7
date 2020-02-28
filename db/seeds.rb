@@ -22,3 +22,13 @@ end
 
 Question.create!(title: "質問1", content: "ここに質問の詳細が表示される。")
 Question.create!(title: "質問2", content: "ここに質問の詳細が表示される。")
+
+# テキスト教材初期データ（仮）
+
+5.times do |no|
+  Text.create(number: no,
+              genre: "basic",
+              title: "タイトル#{no}",
+              content: "内容その#{no}",
+            )
+end

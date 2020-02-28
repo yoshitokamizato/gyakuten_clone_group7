@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   post "/solutions/:id" => "solutions#create"
 
+  resources :texts
+
 end

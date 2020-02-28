@@ -1,0 +1,15 @@
+<%= form_for @text do |f| %>
+    <div class="container">
+      <h3>番号（No.）</h3>
+      <p><%= f.number_field :number, class: "form-control initial-height" %></p>
+      <h3>ジャンル</h3>
+      <p><%= f.select :genre, [["Basic","Basic"], ["Ruby","Ruby"], ["Ruby on Rails","Ruby on Rails"]], :prompt => "選択してください", class: "form-control initial-height" %></p>
+      <h3>タイトル</h3>
+      <p><%= f.text_field :title, class: "form-control initial-height" %></p>
+      <h3>内容</h3>
+      <p><%= f.text_area :content, class: "form-control initial-height", rows: 5 %></p>
+      <div class="form-group">
+        <%= f.submit('送信',class: 'btn btn-primary btn-block btn-lg') %>
+      </div>
+    </div>
+<% end %>
