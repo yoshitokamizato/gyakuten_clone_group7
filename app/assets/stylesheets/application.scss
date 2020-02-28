@@ -38,7 +38,6 @@
     font-size: 20px;
 }
 
-
 /***
 markdown code 表示装飾　ここから
 ***/
@@ -104,6 +103,10 @@ markdown code 表示装飾　ここまで
   #container p {
     font-size: 2.2em;
     line-height: 1.9em;
+  }
+
+  #container tr {
+    font-size: 24px;
   }
 
   #questions .questions-container {
@@ -210,6 +213,11 @@ markdown code 表示装飾　ここまで
   }
 
   #container h1 {
+    padding: 20px 0px 10px 0px;
+    font-size: 30px;
+  }
+
+  #container h2 {
     padding: 20px 0px 10px 0px;
     font-size: 30px;
   }

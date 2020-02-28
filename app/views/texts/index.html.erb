@@ -1,0 +1,26 @@
+<div id="container">
+
+    <h2 class="text-center"><%= link_to "新規投稿（非オリジナル仕様）", new_text_path %></h2>
+
+    <h2 class="text-center">Railsテキスト教材</h2>
+
+    <table class="table table-striped">
+      <thead class="bg-danger text-white">
+        <tr>
+          <th class="text-nowrap">No.</th>
+          <th class="text-nowrap">ジャンル</th>
+          <th class="text-nowrap">内容</th>
+        </tr>
+      </thead>
+      <tbody id="myTable">
+        <% @texts.each do |text| %>
+          <tr>
+            <td><%= text.number %></td>
+            <td><%= text.genre %></td>
+            <td><%= link_to text.title, text_path(text) %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+  </div>
